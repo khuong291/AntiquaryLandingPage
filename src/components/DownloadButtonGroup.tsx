@@ -13,7 +13,7 @@ const DownloadButtonGroup = () => {
       <div className="flex items-start justify-start md:gap-6 gap-2">
         <div className="flex flex-col items-center justify-center gap-2">
           <Image
-            src="/beastid_appstore_qr.png"
+            src="/antiquary_appstore_qr.png"
             alt="Download on the App Store"
             width={0}
             height={0}

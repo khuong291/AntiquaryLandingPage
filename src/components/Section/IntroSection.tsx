@@ -14,35 +14,7 @@ const IntroSection = () => {
     <>
       <section className="relative isolate overflow-hidden">
         {/* Background pattern */}
-        {/* <svg
-          aria-hidden="true"
-          className="absolute inset-0 -z-20 size-full mask-[radial-gradient(100%_100%_at_top_right,white,transparent)] stroke-black/5"
-        >
-          <defs>
-            <pattern
-              id="pattern-bg"
-              width="200"
-              height="200"
-              x="50%"
-              y="-1"
-              patternUnits="userSpaceOnUse"
-            >
-              <path d="M.5 200V.5H200" fill="none" />
-            </pattern>
-          </defs>
-          <svg x="50%" y="-1" className="overflow-visible fill-gray-100/40">
-            <path
-              d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
-              strokeWidth="0"
-            />
-          </svg>
-          <rect
-            width="100%"
-            height="100%"
-            fill="url(#pattern-bg)"
-            strokeWidth="0"
-          />
-        </svg> */}
+
 
         {/* Gradient blur top-left */}
         <div
@@ -93,15 +65,18 @@ const IntroSection = () => {
                       />
                     </div>
                     <p className="text-sm font-semibold">
-                      Trusted by over 200.000 users with ⭐ 4.9 rating
+                      Trusted by over 100k+ users with ⭐ 4.8 rating
                     </p>
                   </div>
                   <h1
                     className={`text-5xl md:text-6xl font-bold mb-6 leading-[1.1] md:leading-[1.2] ${gabarito.className}`}
                   >
-                    Identify <span className="text-yellow-500">Any</span> Animals
+                    Identify <span className="text-yellow-500">Any</span> Antiques
                     <br />
-                    with <span className="text-primary">Beast ID</span>
+                    with <span className="text-primary">Antiquary</span>
+                    {/* Identify <span className="text-yellow-500">antiques</span> and <span className="text-yellow-500">vintage</span> items just a snap,
+                    <br />
+                    with <span className="text-primary">Antiquary</span> */}
                   </h1>
 
                   <p className="text-xl text-gray-600 mb-6 tracking-wide">
@@ -109,14 +84,7 @@ const IntroSection = () => {
                     rich facts, and safety insights. Check venom risk, compare
                     animals, and build your wildlife knowledge—right on your iPhone.
                   </p>
-                  
-                  {/* <ul className="text-base text-gray-700 mb-8 space-y-2">
-                    <li>• Instant animal recognition with smart AI</li>
-                    <li>• Venom check & safety alerts for risky species</li>
-                    <li>• Health check insights for pets & wildlife</li>
-                    <li>• Fun facts & comparisons: strength, speed, bite force & more</li>
-                  </ul> */}
-
+                
                   <div className="flex flex-col justify-center gap-6 items-center w-fit">
                     <DownloadButtonGroup />
                   </div>
@@ -125,7 +93,7 @@ const IntroSection = () => {
                 <div className="flex-1 w-full sm:w-1/2 animateRightToLeft">
                   <Image
                     src="/hero-image.png"
-                    alt="Beast ID App Preview"
+                    alt="Antiquary App Preview"
                     width={1920}
                     height={1080}
                     className="rounded-3xl w-full h-auto sm:max-w-[1920px] mx-auto"

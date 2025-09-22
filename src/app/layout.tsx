@@ -13,14 +13,25 @@ const gabarito = Gabarito({
   variable: "--font-gabarito",
 });
 
+// ---------- SEO METADATA (Antiquary) ----------
 export const metadata: Metadata = {
-  metadataBase: new URL('https://beastid.app'),
-  title: "Beast ID - AI Animal Identifier & Venom Check",
+  metadataBase: new URL("https://antiquary.app"),
+  title: "Antiquary – AI Antique Identifier & Price Guide",
   description:
-    "Beast ID is an AI-powered animal identifier app. Instantly identify snakes, frogs, reptiles, and 1000+ species. Includes Venom Check, Health Check, and Compare tools for explorers, students, and pet owners.",
-  alternates: {
-    canonical: "https://beastid.app",
-  },
+    "Antiquary is an AI-powered antique identifier and price guide. Scan hallmarks and maker’s marks, detect era/materials, and view recent auction comps. Perfect for collectors, dealers, and estate sellers.",
+  alternates: { canonical: "https://antiquary.app" },
+  keywords: [
+    "antique identifier",
+    "AI antique app",
+    "hallmark scanner",
+    "maker’s mark",
+    "auction comps",
+    "antique price guide",
+    "vintage valuation",
+    "collectibles",
+    "porcelain marks",
+    "silver hallmarks",
+  ],
   icons: {
     icon: [
       { url: "/android-icon-36x36.png", sizes: "36x36", type: "image/png" },
@@ -34,45 +45,49 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   openGraph: {
-    title: "Beast ID - AI Animal Identifier & Venom Check",
+    title: "Antiquary – AI Antique Identifier & Price Guide",
     description:
-      "Identify animals instantly with Beast ID. AI-powered scanner for snakes, frogs, reptiles, and more. Stay safe with Venom Check and explore wildlife with confidence.",
-    url: "https://beastid.app",
-    siteName: "Beast ID",
+      "Identify antiques in seconds. Scan hallmarks/maker’s marks, get era & material cues, and see market-based price ranges with recent comps.",
+    url: "https://antiquary.app",
+    siteName: "Antiquary",
     images: [
       {
-        url: "https://beastid.app/BeastIDThumbnail.png",
+        url: "https://antiquary.app/antiquaryThumbnail.png",
         width: 1200,
         height: 630,
-        alt: "Beast ID - AI Animal Identifier",
+        alt: "Antiquary – AI Antique Identifier & Price Guide",
       },
     ],
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Beast ID - AI Animal Identifier & Venom Check",
+    title: "Antiquary – AI Antique Identifier & Price Guide",
     description:
-      "Beast ID is the AI animal scanner app for explorers and students. Identify snakes, frogs, reptiles, and 1000+ species instantly. Includes Venom Check and Compare features.",
-    images: ["https://beastid.app/BeastIDThumbnail.png"],
+      "Scan marks, date pieces, and check auction comps. Antiquary helps collectors and dealers research antiques faster.",
+    images: ["https://antiquary.app/antiquaryThumbnail.png"],
+    site: "@antiquary_app",
+    creator: "@antiquary_app",
   },
   other: {
     "og:image:width": "1200",
     "og:image:height": "630",
     "og:image:type": "image/png",
-    "og:image:secure_url": "https://beastid.app/BeastIDThumbnail.png",
+    "og:image:secure_url": "https://antiquary.app/antiquaryThumbnail.png",
     "twitter:image:width": "1200",
     "twitter:image:height": "630",
-    "twitter:image:alt": "Beast ID - AI Animal Scanner",
+    "twitter:image:alt": "Antiquary – AI Antique Identifier",
   },
 };
 
+// ---------- JSON-LD (Structured Data) ----------
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Beast ID - Animal Identifier",
-  applicationCategory: "EducationApplication",
-  operatingSystem: "iOS",
+  name: "Antiquary – AI Antique Identifier",
+  applicationCategory: "UtilitiesApplication",
+  operatingSystem: "iOS, Android",
   offers: {
     "@type": "Offer",
     price: "0",
@@ -84,18 +99,24 @@ const jsonLd = {
     ratingCount: "2000",
   },
   description:
-    "Beast ID is an AI-powered animal scanner app that identifies frogs, snakes, reptiles, birds, and 1000+ species instantly. Includes Venom Check, Health Check, and Compare features.",
+    "Antiquary identifies antiques and vintage items using AI. Scan hallmarks and maker’s marks, detect era/materials, and view market comps to estimate value.",
   featureList: [
-    "AI Animal Identifier - snakes, frogs, reptiles, and 1000+ species",
-    "Venom Check with safety notes",
-    "Animal Health Check insights",
-    "Compare animals by speed, strength, bite force, and more",
+    "AI Antique Identifier for porcelain, silver, clocks, furniture, and more",
+    "Hallmark & maker’s-mark scanner with quick references",
+    "Era & material cues (e.g., Victorian, Art Deco, porcelain, bronze, jade)",
+    "Price Guide with recent auction comps and value ranges",
+    "Collections: save items, notes, and photos; export shareable PDFs",
   ],
   screenshot: [
-    "https://beastid.app/screenshots/screen1.png",
-    "https://beastid.app/screenshots/screen2.png",
-    "https://beastid.app/screenshots/screen3.png",
+    "https://antiquary.app/screenshots/screen1.png",
+    "https://antiquary.app/screenshots/screen2.png",
+    "https://antiquary.app/screenshots/screen3.png",
   ],
+  publisher: {
+    "@type": "Organization",
+    name: "Antiquary",
+    url: "https://antiquary.app",
+  },
 };
 
 export default function RootLayout({
@@ -112,47 +133,28 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/android-icon-48x48.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/android-icon-192x192.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="192x192"
-          href="/android-icon-192x192.png"
-        />
+        <link rel="icon" type="image/png" sizes="32x32" href="/android-icon-48x48.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="/android-icon-192x192.png" />
         <link rel="shortcut icon" href="/android-icon-48x48.png" />
-        <meta
-          name="msapplication-TileImage"
-          content="/android-icon-144x144.png"
-        />
+        <meta name="msapplication-TileImage" content="/android-icon-144x144.png" />
         <meta name="msapplication-TileColor" content="#ffffff" />
-        <Script
-          id="schema-jsonld"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
+        {/* JSON-LD */}
+        <Script id="schema-jsonld" type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         <GoogleAnalytics />
       </head>
       <body
         className={gabarito.className}
         style={{
+          // subtle warm/archival gradient background
           backgroundImage:
-            "linear-gradient(to bottom, #FFFFFF,#FFFFF0, #F0F8FF, #FFFFF0)",
+            "linear-gradient(to bottom, #FFFFFF, #FAF3E7, #F6F2EA, #FAF3E7)",
         }}
       >
         <Providers>
           <Navbar />
           {children}
-          {/* CTA Section */}
           <CTASection />
         </Providers>
       </body>

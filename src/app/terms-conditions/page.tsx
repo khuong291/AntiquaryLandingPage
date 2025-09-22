@@ -29,14 +29,14 @@ const TermsConditionsPage = () => {
         </p>
 
         <p className="mb-6 text-gray-700 leading-relaxed">
-          The <strong>Beast ID</strong> app stores and processes personal data
+          The <strong>Antiquary</strong> app stores and processes personal data
           that you have provided to us in order to provide our service. It’s
           your responsibility to keep your device and access to the app secure.
           We recommend that you do not jailbreak or root your phone, which is
           the process of removing software restrictions imposed by the official
           operating system. Doing so could make your device vulnerable to
           malware, viruses, malicious programs, and may compromise your device’s
-          security features. It could also mean that the Beast ID app won’t work
+          security features. It could also mean that the Antiquary app won’t work
           properly or at all.
         </p>
 
@@ -126,7 +126,7 @@ const TermsConditionsPage = () => {
         <p className="mb-6 text-gray-700 leading-relaxed">
           If you have any questions or suggestions about our Terms and
           Conditions, please contact us at{" "}
-          <span className="font-medium">beastid.app@gmail.com</span>.
+          <span className="font-medium">antiquary.app@gmail.com</span>.
         </p>
 
         <p className="text-sm text-gray-500">

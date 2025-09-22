@@ -44,28 +44,19 @@ export default function Navbar() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/BeastID.png"
-            alt="BeastID"
+            src="/antiquary.png"
+            alt="antiquary"
             width={44}
             height={44}
             quality={100}
             className="rounded-md"
             priority
           />
-          Beast ID
+          Antiquary
         </Link>
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-2 text-lg font-medium">
-          <li>
-            <a
-              href="/#features"
-              className={navLinkClass}
-              onClick={handleAnchorClick}
-            >
-              Features
-            </a>
-          </li>
           <li>
             <a
               href="/#rating"
@@ -76,7 +67,16 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="mailto:beastid.app@gmail.com" className={navLinkClass}>
+            <a
+              href="/#faq"
+              className={navLinkClass}
+              onClick={handleAnchorClick}
+            >
+              FAQ
+            </a>
+          </li>
+          <li>
+            <a href="mailto:antiquary.app@gmail.com" className={navLinkClass}>
               Contact
             </a>
           </li>
@@ -164,7 +164,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="mailto:beastid.app@gmail.com"
+                href="mailto:antiquary.app@gmail.com"
                 className={navLinkClass}
                 onClick={() => setOpen(false)}
               >

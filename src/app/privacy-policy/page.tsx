@@ -9,7 +9,7 @@ const PrivacyPolicyPage = () => {
         </h1>
 
         <p className="mb-6 text-gray-700 leading-relaxed">
-          <strong>Indie Goodies LLC</strong> built the <strong>Beast ID</strong> app as a Freemium app. 
+          <strong>Indie Goodies LLC</strong> built the <strong>Antiquary</strong> app as a Freemium app. 
           This SERVICE is provided by Indie Goodies LLC at no cost and is intended for use as is.
         </p>
 
@@ -169,7 +169,7 @@ const PrivacyPolicyPage = () => {
         <p className="mb-6 text-gray-700 leading-relaxed">
           If you have any questions or suggestions about this Privacy Policy,
           do not hesitate to contact us at{" "}
-          <span className="font-medium">beastid.app@gmail.com</span>.
+          <span className="font-medium">antiquary.app@gmail.com</span>.
         </p>
 
         <p className="text-sm text-gray-500">

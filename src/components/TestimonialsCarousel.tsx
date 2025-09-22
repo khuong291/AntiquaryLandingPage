@@ -6,13 +6,44 @@ import TestimonialCard from "./Card/TestimonialCard";
 
 const ANIM = { duration: 40000, easing: (t: number) => t };
 
+// ★ Testimonials dành cho Antiquary
 const DATA = [
-  { image: "sarah.jpg",   name: "Sarah",    content: "Beast ID helped me quickly identify reptiles on the trail. The Venom Check notes are super handy when I shoot in remote areas." },
-  { image: "michael.jpg", name: "Michael",  content: "The species details and compare view make studying animal traits actually fun. It’s my go-to field companion now." },
-  { image: "emma.jpg",    name: "Emma",     content: "I used Beast ID to verify similar-looking breeds at the shelter. Clean UI, accurate suggestions, and helpful tips." },
-  { image: "david.jpg",   name: "David",    content: "Instant ID from a quick snap. The safety notes gave me confidence when I came across a snake on a rocky path." },
-  { image: "jennifer.jpg",name: "Jennifer", content: "Great for classroom activities. Students love scanning photos and reading the fun facts. Learning feels interactive." },
-  { image: "alex.jpg",    name: "Alex",     content: "Offline-friendly behavior saved me while exploring in poor signal areas. Smooth experience end to end." },
+  {
+    image: "sarah.jpg",
+    name: "Sarah (Collector)",
+    content:
+      "Antiquary spotted a Meissen crossed-swords mark I kept missing and pulled recent comps within seconds. It paid for itself on my first purchase.",
+  },
+  {
+    image: "michael.jpg",
+    name: "Michael (Dealer)",
+    content:
+      "The hallmark guide is brilliant—lion passant, date letters, assay offices—all in one place. Pricing ranges mapped to auction results save me time.",
+  },
+  {
+    image: "emma.jpg",
+    name: "Emma (Estate Seller)",
+    content:
+      "I cataloged an entire estate: Victorian silver, Art Deco clocks, Chinese porcelain. The app suggested era/materials and gave a clean PDF export.",
+  },
+  {
+    image: "david.jpg",
+    name: "David (Appraiser)",
+    content:
+      "The maker’s-mark matcher and material cues (paste, glaze, construction) are surprisingly accurate. Great as a first-pass before deep research.",
+  },
+  {
+    image: "jennifer.jpg",
+    name: "Jennifer (Museum Volunteer)",
+    content:
+      "Students loved the provenance tips and short context blurbs—quickly explains styles from Ming to Edo without overwhelming beginners.",
+  },
+  {
+    image: "alex.jpg",
+    name: "Alex (Weekend Picker)",
+    content:
+      "Offline notes and checklists are perfect at flea markets. I identified a bronze candlestick and negotiated confidently using the value range.",
+  },
 ];
 
 export default function TestimonialsCarousel() {
@@ -67,19 +98,27 @@ export default function TestimonialsCarousel() {
   const items = useMemo(() => DATA, []);
 
   return (
-    <section id="testimonials" className="relative overflow-hidden py-20" aria-labelledby="testimonials-heading">
-      {/* soft gradient background */}
-      <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-emerald-300/20 blur-3xl" />
-      <div className="pointer-events-none absolute right-0 -bottom-10 h-72 w-72 rounded-full bg-sky-300/20 blur-3xl" />
+    <section
+      id="testimonials"
+      className="relative overflow-hidden py-20"
+      aria-labelledby="testimonials-heading"
+    >
+      {/* soft gradient background (ấm cổ điển) */}
+      <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-amber-300/25 blur-3xl" />
+      <div className="pointer-events-none absolute right-0 -bottom-10 h-72 w-72 rounded-full bg-rose-300/20 blur-3xl" />
 
       <div>
         <div className="flex items-end justify-between gap-4 mb-8 container mx-auto max-w-6xl px-4">
           <div>
-            <h2 id="testimonials-heading" className="text-3xl md:text-4xl font-bold tracking-tight">
-              What people say about Beast ID
+            <h2
+              id="testimonials-heading"
+              className="text-3xl md:text-4xl font-bold tracking-tight"
+            >
+              What collectors say about Antiquary
             </h2>
             <p className="text-gray-600 mt-2">
-              Feedback from our community of explorers, learners, and pet owners.
+              Real stories from dealers, appraisers, and enthusiasts using Antiquary to
+              identify marks, date pieces, and estimate value.
             </p>
           </div>
 
@@ -114,7 +153,12 @@ export default function TestimonialsCarousel() {
         >
           {items.map((t, i) => (
             <div key={i} className="keen-slider__slide p-1">
-              <TestimonialCard name={t.name} content={t.content} image={t.image} rating={5} />
+              <TestimonialCard
+                name={t.name}
+                content={t.content}
+                image={t.image}
+                rating={5}
+              />
             </div>
           ))}
         </div>

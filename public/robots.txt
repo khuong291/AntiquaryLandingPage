@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://beastid.app/sitemap.xml
+Sitemap: https://antiquary.app/sitemap.xml
 
 # Disallow admin and private paths
 Disallow: /api/

@@ -77,7 +77,7 @@ export default function IncludeSection() {
   return (
     <section className="container mx-auto pt-20" aria-labelledby="include-heading" id="features">
       <h2 id="include-heading" className="text-4xl font-bold text-center mb-8 tracking-tight px-4">
-        What’s included in <span className="text-primary">Beast ID</span>?
+        What’s included in <span className="text-primary">Antiquary</span>?
       </h2>
 
       <div className="flex md:flex-row flex-col justify-center items-center gap-16">
@@ -96,7 +96,7 @@ export default function IncludeSection() {
 
             <Image
               src={activeFeature.img}
-              alt={`Beast ID feature preview — ${activeFeature.title}`}
+              alt={`Antiquary feature preview — ${activeFeature.title}`}
               width={400}
               height={300}
               className={`w-full h-auto object-contain rounded-2xl transition-all duration-300 ${isLoading ? 'opacity-0' : 'opacity-100'}`}

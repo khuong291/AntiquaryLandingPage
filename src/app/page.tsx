@@ -1,8 +1,8 @@
 import IntroSection from "@/components/Section/IntroSection";
 import FeatureSection from "@/components/Section/FeatureSection";
 import TestimonialsSection from "@/components/Section/TestimonialsSection";
-import IncludeSection from "@/components/Section/IncludeSection";
 import DownloadSoonModal from "@/components/Modal/DownloadSoonModal";
+import FAQSection from "@/components/Section/FAQSection";
 
 export default function Home() {
   return (
@@ -12,8 +12,8 @@ export default function Home() {
       <IntroSection />
       {/* Features Section */}
       <FeatureSection />
-      {/* BeastID include? */}
-      <IncludeSection />
+      {/* antiquary FAQ? */}
+      <FAQSection />
       {/* Testimonials Section */}
       <TestimonialsSection />
     </main>
