@@ -44,12 +44,12 @@ export default function Navbar() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/antiquary.jpg"
+            src="/antiquary-icon.png"
             alt="antiquary"
             width={44}
             height={44}
             quality={100}
-            className="rounded-md"
+            className=""
             priority
           />
           Antiquary
