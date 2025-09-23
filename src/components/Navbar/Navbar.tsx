@@ -44,7 +44,7 @@ export default function Navbar() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/antiquary.png"
+            src="/antiquary.jpg"
             alt="antiquary"
             width={44}
             height={44}
