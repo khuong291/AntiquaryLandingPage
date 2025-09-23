@@ -1,4 +1,6 @@
 {
+  "/_not-found": "app/_not-found.js",
   "/page": "app/page.js",
-  "/terms-conditions/page": "app/terms-conditions/page.js"
+  "/terms-conditions/page": "app/terms-conditions/page.js",
+  "/privacy-policy/page": "app/privacy-policy/page.js"
 }
