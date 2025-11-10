@@ -29,7 +29,7 @@ const DownloadButtonGroup = () => {
 
         <div className="flex flex-col items-start justify-between gap-2 mt-4">
           <Link
-            href="https://apps.apple.com/app/id6752285910"
+            href="https://apps.apple.com/app/id6752483307"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block hover:scale-105 transition-all duration-300"

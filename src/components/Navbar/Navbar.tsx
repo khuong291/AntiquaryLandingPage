@@ -84,7 +84,7 @@ export default function Navbar() {
 
         {/* CTA Desktop */}
         <Link
-          href="https://apps.apple.com/app/id6478046939"
+          href="https://apps.apple.com/app/id6752483307"
           target="_blank"
           className="hidden md:inline-flex rounded-[14px] hover:scale-110 transition-transform duration-300 items-center gap-1"
         >
@@ -174,7 +174,7 @@ export default function Navbar() {
           </ul>
 
           <Link
-            href="https://apps.apple.com/app/id6478046939"
+            href="https://apps.apple.com/app/id6752483307"
             target="_blank"
             className="mt-3 inline-flex w-full justify-center text-white px-4 py-3 rounded-2xl active:scale-[0.99] transition"
             onClick={() => setOpen(false)}
